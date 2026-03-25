@@ -14,3 +14,9 @@ __pycache__/
 .env
 venv/
 .venv/
+
+#BMad
+._bmad/
+
+#Claude Code
+.claude/skills/
