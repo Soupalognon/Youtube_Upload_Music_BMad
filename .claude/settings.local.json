@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py -3.11 -m pytest:*)",
+      "Bash(py:*)",
+      "Bash(echo:*)",
+      "Bash(venv/Scripts/activate.bat)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(source:*)",
+      "Bash(./venv/Scripts/pip install:*)",
+      "Bash(./venv/Scripts/python -m pytest:*)",
+      "Bash(./venv/Scripts/pytest.exe test_utils.py test_scanner.py -v)",
+      "Bash(./venv/Scripts/pytest.exe test_matcher.py -v --tb=short)",
+      "Bash(python -c:*)",
+      "Bash(./venv/Scripts/python.exe:*)",
+      "Bash(python -m pip install:*)"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+# Authentification YouTube Music (contient des credentials navigateur — JAMAIS commiter)
+browser.json
+
+# Artefact généré — peut contenir des données personnelles musicales
+library.csv
+
+# Fichiers temporaires d'écriture atomique CSV
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/

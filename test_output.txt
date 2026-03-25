@@ -1,0 +1,56 @@
+======================================================================
+STORY 4.3 TESTS: CSV Persistence et Resume Automatique
+======================================================================
+
+--- AC1: Immediate CSV Persistence ---
+[PASS] AC1: CSV written after track 1
+[PASS] AC1: Track 1 marked as imported
+[PASS] AC1: CSV written after track 2
+[PASS] AC1: Track 2 marked as imported
+[PASS] AC1: CSV written after track 3
+[PASS] AC1: Track 3 marked as imported
+
+--- AC2: Automatic Resume After Interruption ---
+[PASS] AC2: Only pending tracks with yt_video_id to import
+[PASS] AC2: Track 3 identified for processing
+[PASS] AC2: Track 4 identified for processing
+
+--- AC2/AC3: Finalized Lines Never Touched ---
+[PASS] AC2/AC3: Only pending with yt_video_id to process
+[PASS] AC2/AC3: 7 finalized statuses ignored
+
+--- AC2/AC3: Pending Without yt_video_id Skipped ---
+[PASS] AC2/AC3: Only 1 track with yt_video_id to process
+[PASS] AC2/AC3: Correct track identified
+
+--- AC3: Zero Duplication - Idempotence ---
+[PASS] AC3: Imported track never re-processed
+
+--- AC3: Multiple Runs - No Duplication ---
+[PASS] AC3: Run 1 - 2 tracks to process
+[PASS] AC3: Run 2 - 1 track to process
+[PASS] AC3: Run 2 - Correct track identified
+[PASS] AC3: Run 3 - 0 tracks to process
+
+--- AC4: 100% Status Coverage ---
+[PASS] AC4: All lines have status
+[PASS] AC4: Validation function executed without error
+
+--- Realistic Scenario: Interruption & Recovery ---
+[PASS] Scenario: Run 1 - 3 tracks imported
+[PASS] Scenario: Run 2 - 2 tracks to process
+[PASS] Scenario: All tracks processed
+[PASS] Scenario: 100% status coverage
+
+======================================================================
+RESULTS: 24 passed, 0 failed
+======================================================================
+
+[SUCCESS] All Story 4.3 tests passed!
+  - AC1: CSV Persistence verified
+  - AC2: Automatic Resume verified
+  - AC3: Zero Duplication verified
+  - AC4: 100% Status Coverage verified
+
+Story 4.3 is ready for code review.
+

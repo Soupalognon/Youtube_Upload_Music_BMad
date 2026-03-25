@@ -1,0 +1,5 @@
+ytmusicapi==1.11.5
+tinytag==2.2.0
+rapidfuzz==3.14.3
+pyyaml==6.0.3
+tqdm==4.67.3

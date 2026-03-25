@@ -1,0 +1,22 @@
+# Configuration de Youtube_upload_playlists
+# Tous les paramètres passent par ce fichier — aucune valeur hardcodée (NFR12)
+
+music_folder: '\\DESKTOP-U8AN9SJ/Musique'        # À modifier : chemin vers le dossier musique local
+
+confidence_threshold: 70                   # Score minimum pour accepter un match (0–100)
+low_confidence_threshold: 65               # Score minimum pour low_confidence (valeur PRD Parcours 3)
+duration_tolerance: 50                     # Tolérance en secondes pour vérification de durée
+
+supported_extensions:                      # Filtrage des fichiers non-audio
+  - .mp3
+  - .flac
+  - .m4a
+  - .ogg
+  - .wav
+  - .aac
+  - .wma
+
+filter_live: false                          # Exclure les versions live des résultats YouTube Music
+
+api_delay: 0.1                             # Pause en secondes entre appels API (matcher & importer)
+rate_limit_sleep: 1.0                      # Délai supplémentaire sur HTTP 429 (importer)

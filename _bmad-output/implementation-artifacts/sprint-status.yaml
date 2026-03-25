@@ -1,0 +1,79 @@
+# generated: 2026-02-22
+# project: Youtube_upload_playlists
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: d:\_Programs\Youtube_upload_playlists\_bmad-output\implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - SM typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: "2026-02-22"
+project: Youtube_upload_playlists
+project_key: NOKEY
+tracking_system: file-system
+story_location: "d:\\_Programs\\Youtube_upload_playlists\\_bmad-output\\implementation-artifacts"
+
+development_status:
+  # ─── Epic 1 : Setup & Authentification ───────────────────────────────────
+  epic-1: in-progress
+  1-1-initialisation-de-la-structure-du-projet: review
+  1-2-configuration-des-parametres-via-config-yaml: review
+  1-3-generation-de-lauthentification-youtube-music: review
+  1-4-validation-du-browser-json-au-demarrage: review
+  epic-1-retrospective: optional
+
+  # ─── Epic 2 : Scan de la Bibliothèque Locale ─────────────────────────────
+  epic-2: in-progress
+  2-1-scan-recursif-et-lecture-des-metadonnees-id3: review
+  2-2-detection-des-fichiers-corrompus-et-gestion-des-erreurs: review
+  2-3-detection-et-marquage-des-doublons: review
+  2-4-export-csv-et-idempotence-du-scanner: review
+  epic-2-retrospective: optional
+
+  # ─── Epic 3 : Matching & Scoring de la Bibliothèque ──────────────────────
+  epic-3: in-progress
+  3-1-recherche-youtube-music-et-nettoyage-des-titres: review
+  3-2-scoring-de-similarite-et-verification-de-duree: review
+  3-3-generation-des-urls-de-verification-et-persistance-csv: review
+  3-4-resilience-reseau-et-progression-du-matcher: review
+  epic-3-retrospective: optional
+
+  # ─── Epic 4 : Import vers YouTube Music ──────────────────────────────────
+  epic-4: in-progress
+  4-1-import-des-morceaux-matches-et-gestion-des-statuts: review
+  4-2-resilience-reseau-et-rate-limiting-de-limporter: review
+  4-3-persistance-csv-et-reprise-automatique-de-limporter: review
+  4-4-suivi-temps-reel-et-resume-de-fin-de-run: review
+  epic-4-retrospective: optional
+
+  # ─── Epic 5 : Review Manuelle des Orphelins ──────────────────────────────
+  epic-5: backlog
+  5-1-filtrage-et-identification-des-morceaux-a-traiter: backlog
+  5-2-relance-de-limport-apres-correction-manuelle: backlog
+  epic-5-retrospective: optional
