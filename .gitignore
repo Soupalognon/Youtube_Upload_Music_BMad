@@ -2,7 +2,7 @@
 browser.json
 
 # Artefact généré — peut contenir des données personnelles musicales
-library.csv
+# library.csv
 
 # Fichiers temporaires d'écriture atomique CSV
 *.tmp
